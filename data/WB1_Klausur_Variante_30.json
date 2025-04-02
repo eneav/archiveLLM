@@ -1,0 +1,82 @@
+[
+  {
+    "fach": "WB 1",
+    "jahr": "2023",
+    "klausur_nr": "30",
+    "thema": "Ausbildungsvertrag",
+    "aufgabentyp": "offene Frage",
+    "frage": "In welcher Form muss ein Ausbildungsvertrag abgeschlossen werden?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Pflichten des Ausbilders",
+    "aufgabentyp": "multiple choice",
+    "frage": "Welche Pflicht hat der Ausbilder gegenüber dem Azubi?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Pflichten im Vertrag",
+    "aufgabentyp": "offene Frage",
+    "frage": "Nennen Sie je drei Pflichten des Auszubildenden und Ausbilders."
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Qualifikationen im Betrieb",
+    "aufgabentyp": "offene Frage",
+    "frage": "Listen Sie auf, welche Qualifikationen in Ihrem Betrieb als Fachinformatiker*in verlangt werden."
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Pflichten des Azubis",
+    "aufgabentyp": "multiple choice",
+    "frage": "Was ist die Hauptpflicht des Auszubildenden?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Duales System & Kommunikation",
+    "aufgabentyp": "offene Frage",
+    "frage": "Welche Aufgaben haben Betrieb und Schule im dualen Ausbildungssystem?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2023",
+    "klausur_nr": "30",
+    "thema": "Gesetze & Kontrolle",
+    "aufgabentyp": "offene Frage",
+    "frage": "Welche Gesetze regeln die Ausbildung? Wer überwacht sie?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Probezeit",
+    "aufgabentyp": "offene Frage",
+    "frage": "Wie lange dauert die Probezeit? Welche Ausnahmen gibt es?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2023",
+    "klausur_nr": "30",
+    "thema": "Konfliktlösung",
+    "aufgabentyp": "offene Frage",
+    "frage": "Wie sollte ein Azubi bei Konflikten im Team handeln?"
+  },
+  {
+    "fach": "WB 1",
+    "jahr": "2024",
+    "klausur_nr": "30",
+    "thema": "Kommunikation & Kommunikation",
+    "aufgabentyp": "multiple choice",
+    "frage": "Was beschreibt sachgerechte Kommunikation im Betrieb?"
+  }
+]
