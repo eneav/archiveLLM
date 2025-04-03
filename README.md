@@ -98,9 +98,7 @@ Die generierten Aufgaben werden im Ordner `llm_generator/generated_tasks/` gespe
 
 Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automatisch eine PDF erzeugt:
 
-[Download der generierten Aufgaben (Beispiel)](llm_generator/generated_tasks/aufgaben_llm_export.pdf)
 
-Du kannst auch einen Screenshot der PDF verwenden, um direkt eine Vorschau zu geben (siehe unten).
+![Vorschau PDF](statistics\beispielausgabe.pdf)
 
-![PDF Beispiel](llm_generator/generated_tasks/aufgaben_llm_export_preview.png)
-
+![Vorschau PDF](ArchiveLLM\llm_generator\generated_tasks\aufgaben_llm_export.pdf)
