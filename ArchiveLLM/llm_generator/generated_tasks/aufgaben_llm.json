@@ -1,14 +1,14 @@
 {
   "Probezeit": {
-    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Probezeit\":\nWie lange dauert die Probezeit? Welche Ausnahmen gibt es?\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
-    "generated_tasks": "1. Welche Bedeutung hat die Probezeit für Arbeitnehmer und Arbeitgeber?\n2. Welche Konsequenzen können während der Probezeit eintreten, wenn die Leistungen nicht den Erwartungen entsprechen?\n3. Welche rechtlichen Regelungen gelten für die Kündigung während der Probezeit?"
+    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Probezeit\":                     \nWie lange dauert die Probezeit? Welche Ausnahmen gibt es?\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
+    "generated_tasks": "1. Welche Dauer hat die Probezeit in der Regel und welche Faktoren können zu einer Verlängerung führen?\n2. Welche rechtlichen Grundlagen regeln die Probezeit und welche Ausnahmen sind in bestimmten Fällen möglich?\n3. Wie können Arbeitgeber und Arbeitnehmer die Probezeit nutzen, um eine erfolgreiche Zusammenarbeit sicherzustellen, und welche Konsequenzen können bei Nichtbestehen drohen?"
   },
   "Qualifikationen im Betrieb": {
-    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Qualifikationen im Betrieb\":\nListen Sie auf, welche Qualifikationen in Ihrem Betrieb als Fachinformatiker*in verlangt werden.\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
-    "generated_tasks": "1. Welche Qualifikationen sind erforderlich, um in einem Unternehmen als Elektriker*in zu arbeiten?\n2. Nennen Sie die notwendigen Qualifikationen für eine Position als Marketing Manager*in in einem internationalen Unternehmen.\n3. Welche Qualifikationen werden für eine Anstellung als Projektmanager*in in der Bauindustrie benötigt?"
+    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Qualifikationen im Betrieb\":                     \nListen Sie auf, welche Qualifikationen in Ihrem Betrieb als Fachinformatiker*in verlangt werden.\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
+    "generated_tasks": "1. Nennen Sie mindestens drei Qualifikationen, die ein*e Buchhalter*in in Ihrem Unternehmen haben sollte.\n2. Welche Qualifikationen sind für eine*n Projektmanager*in in Ihrem Betrieb unverzichtbar?\n3. Welche Fähigkeiten und Kompetenzen werden von einem*einer Vertriebsmitarbeiter*in in Ihrem Unternehmen erwartet?"
   },
   "Leistungsbereitschaft": {
-    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Leistungsbereitschaft\":\nBenennen und erörtern Sie wichtige Faktoren, die die Leistungsbereitschaft der MitarbeiterInnen beeinflussen können.\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
-    "generated_tasks": "1. Erläutern Sie, wie Führungskräfte die Leistungsbereitschaft ihrer Teammitglieder positiv beeinflussen können.\n2. Diskutieren Sie, welche Rolle die Unternehmenskultur bei der Steigerung der Leistungsbereitschaft der MitarbeiterInnen spielt.\n3. Beschreiben Sie, wie Anreizsysteme dazu beitragen können, die Leistungsbereitschaft der Belegschaft zu erhöhen."
+    "prompt": "Hier sind fünf echte Prüfungsfragen zum Thema \"Leistungsbereitschaft\":                     \nBenennen und erörtern Sie wichtige Faktoren, die die Leistungsbereitschaft der MitarbeiterInnen beeinflussen können.\n\nErstelle daraus drei neue, inhaltlich vergleichbare Übungsfragen im selben Stil.",
+    "generated_tasks": "1. Beschreiben Sie, wie Führungskräfte die Leistungsbereitschaft ihrer MitarbeiterInnen steigern können.\n2. Welche Rolle spielen Belohnungssysteme und Anerkennung bei der Förderung der Leistungsbereitschaft?\n3. Diskutieren Sie, wie eine positive Unternehmenskultur die Leistungsbereitschaft der MitarbeiterInnen beeinflusst."
   }
 }
