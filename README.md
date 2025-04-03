@@ -73,14 +73,13 @@ Das Analyse-Tool wurde zunächst für ein einzelnes Fach und 10 Prüfungen umges
 
 - Weitere Fächer und Jahrgänge können ergänzt werden (mehr Daten = genauere Muster)
 - Bestehende JSON-Struktur unterstützt automatisierte Verarbeitung
-- Die statistische Grundlage kann von einem nachgeschalteten Modul genutzt werden, das auf Basis der gewonnenen Muster künftige Prüfungsaufgaben thematisch und formal vorhersagt
+- Die statistische Grundlage kann von einem nachgeschalteten Modul genutzt werden
 
----
 ---
 
 ## LLM-basierte Aufgabengenerierung (Sprachmodell-Ansatz)
 
-Ein wesentlicher Bestandteil dieses Projekts ist der Einsatz eines Large Language Models (LLM), konkret eines gpt-Modells(3.5-turbo)von openai. 
+Ein wesentlicher Bestandteil meines Projekts ist der Einsatz eines Large Language Models , konkret eines gpt-Modells(3.5-turbo)von openai. 
 
 Es wird verwendet, um auf Basis realer Klausuraufgaben neue, thematisch passende Übungsaufgaben zu formulieren. (Neuer Aufbau der Aufgabenstellung, selbe Logik der Antwort wird akzeptiert)
 
@@ -88,13 +87,14 @@ Der LLM erhält eine Auswahl häufiger Themen aus der vorhergehenden Analyse und
 die sich in Sprache, Struktur und Inhalt an früheren Prüfungsformaten orientieren. (siehe Statistik der Aufgabentypen und Themenverteilung )
 
 Damit geht das Projekt deutlich über einfache statistische Vorhersagen hinaus: 
-Es wird nicht nur gemessen, was häufig vorkommt – sondern das Sprachmodell leitet davon direkt neue, sinnvolle Aufgaben ab.
+
+Es wird nicht nur gemessen, was häufig vorkommt,sondern das Sprachmodell leitet davon direkt neue, sinnvolle Aufgaben ab.
 
 Die generierten Aufgaben werden im Ordner `llm_generator/generated_tasks/` gespeichert – sowohl als `.json`, als auch als `.pdf`.
 
 ---
 
-## Beispielausgabe (PDF)
+## Beispielausgabe 
 
 Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automatisch eine PDF erzeugt:
 
