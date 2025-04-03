@@ -1,16 +1,21 @@
 # Prüfungsanalyse-Tool (Statistik + Prognosebasis)
 
-Dieses Projekt bietet eine statistische Auswertung von Prüfungsarchiven, basierend auf strukturierten JSON-Daten mit Aufgaben verschiedener Prüfungsvarianten. Es dient dazu, Muster in Themen und Aufgabentypen zu erkennen und bildet die Grundlage für ein Prognosesystem zur Vorhersage wahrscheinlicher Aufgabenbereiche in zukünftigen Prüfungen. 
+Dieses Projekt ist eine Weiterentwicklung meines [ursprünglichen Analyse-Tools](https://github.com/eneav/Statistikbasierte-Pruefungsprognose).
+
+Aufbauend auf den statistischen Auswertungen aus simulierten Prüfungsarchiven wurde hier ein System entworfen, 
+das typische Themen und Aufgabentypen erkennt und darauf basierend neue, realistische Übungsaufgaben generiert. 
+
+Ziel ist es, aus vorhandenen Mustern gezielt neue Aufgabenstellungen abzuleiten, um die Vorbereitung auf Prüfungen praxisnäher (mit struktur) zu gestalten.
 
 ## Ziel des Projekts
 
-- Analyse und visualisierung der Aufgabenverteilung (Themen und Typen)
-- Export CSV-Daten für weitere Verarbeitung in strukturierter Form
-- Aufbau einer statistischen Basis, auf der Vorhersagen künftiger Prüfungsaufgaben möglich werden
+- Analyse und visualisierung der Aufgabenverteilung (Themen und Typen|ursprüngliches Tool)
+- Export CSV-Daten für weitere Verarbeitung in strukturierter Form (/output)
+- Aufbau einer statistischen Basis, auf der Vorhersagen künftiger Prüfungsaufgaben möglich werden 
 - Dient als Grundlage für ein LLM-Modul, das basierend auf der statistischen Analyse automatisiert Aufgaben und Themenprognosen generieren kann
 
 
-## Beispielausgaben
+## Beispielausgaben meines ursprünglichen Analyse-Tools
 
 ### Themenverteilung in 10 Prüfungen
 ![Themenverteilung](statistics/StatistikThemenvereteilung.png)
@@ -18,56 +23,48 @@ Dieses Projekt bietet eine statistische Auswertung von Prüfungsarchiven, basier
 ### Aufgabentypen in 10 Prüfungen
 ![Aufgabentypen](statistics/StatistikAufgabentypen.png)
 
-## Datenbasis
+## Datengrundlage
 
 Die Daten stammen aus 10 simulierten Prüfungen eines bestimmten Fachbereichs(hierbei Prüfung WB). Die JSON-Dateien enthalten jeweils eine Liste von Aufgaben mit den Feldern:
 
-- `thema` – Das Thema der Aufgabe
-- `aufgabentyp` – z. B. „offene Frage“ oder „multiple choice“
-- `frage` – Die Aufgabenstellung
-- `antwort` – Die Musterlösung
+- `thema` – Das übergeordnete Thema der Frage  
+- `aufgabentyp` – Zum Beispiel „offene Frage“ oder „multiple choice“  
+- `frage` – Die konkrete Aufgabenstellung  
+- `antwort` – Eine beispielhafte Musterlösung  
 
 ![FORMAT](datenformatJSON.PNG)
 
-Die Inhalte basieren auf realen Prüfungen, wurden aber leicht abgewandelt (z. B. Synonyme, Umstellungen), um unterschiedliche Formulierungen bei gleichbleibender Intention zu simulieren. Zusätzlich wurde eine zufällige Varianz von ca. 20 % eingebaut, um realistische Abweichungen zu berücksichtigen.
+Die Inhalte basieren auf realen Prüfungen, wurden aber leicht abgewandelt (z. B. Synonyme oder Umstellungen), um unterschiedliche Formulierungen bei gleichbleibender Intention zu simulieren. Zusätzlich wurde eine zufällige Varianz von ca. 20-30 % eingebaut, um realistische Abweichungen zu berücksichtigen.
 
 Für die eigentliche Analyse wurden bewusst 10 Prüfungen berücksichtigt, da dies einem typischen Prüfungszeitraum mehrerer Jahrgänge entspricht und somit eine realistische Grundlage für Prognosen bildet.
 
-Im Ordner `data/` befinden sich zusätzlich 50 simulierte Prüfungsdateien, die ein umfangreicheres Archiv abbilden. Sie wurden generiert, um das Analyseverhalten bei größeren Datenmengen zu testen. Damit diese verwendet werden können, muss die Logik im Analyse-Notebook (`notebooks/analyse_aufgaben.ipynb`) entsprechend angepasst werden – z. B. durch ein automatisiertes Einlesen ALLER JSON-Dateien im Verzeichnis.
+Im Ordner `data/` befinden sich zusätzlich 50 simulierte Prüfungsdateien, die ein umfangreicheres Archiv abbilden. Sie wurden generiert, um das Analyseverhalten bei größeren Datenmengen zu testen. Damit diese verwendet werden können, muss die Logik im Analyse-Notebook (`notebooks/analyse_aufgaben.ipynb`) entsprechend angepasst werden –
 
 
-## Nutzung
+## Nutzung 
 
-1. Virtuelle Umgebung aktivieren (empfohlen):
+1. virtuelle Umgebung aktivieren (empfohlen und nur einmalig):
     ```bash
     python -m venv .venv
     .\.venv\Scripts\activate
     ```
 
-2. Abhängigkeiten installieren:
+2. Reqs installieren:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Notebook ausführen:
+3. Notebook ausführen (Analyse):
     ```bash
     jupyter notebook notebooks/analyse_aufgaben.ipynb
     ```
 
-Beim Durchlauf des Notebooks wird automatisch:
-- eine Themenanalyse durchgeführt
-- eine Aufgabentypanalyse visualisiert
-- ein vollständiger CSV-Export erstellt (`output/alle_fragen_gesamt.csv`)
+4. Notebook ausführen (Aufgabengenerierung):
+    ```bash
+    jupyter notebook llm_generator/generate_tasks.ipynb
+    ```
 
-## Projektstruktur
-
-| Pfad                | Beschreibung                                                                 |
-|---------------------|------------------------------------------------------------------------------|
-| `data/`             | Enthält die JSON-Dateien der 50 varianten (skalierbar nach Fach/Menge) |
-| `notebooks/`        | Analyse-notebook (ipynb)                                                      |
-| `output/`           | Exportierte CSV-Dateien                             |
-| `statistics/`       | grafische Ausgaben der statistischen Analyse                                 |
-| `requirements.txt`  | Paketliste für Umgebung                                               |
+---
 
 
 ## Skalierbarkeit und Erweiterung
@@ -79,4 +76,31 @@ Das Analyse-Tool wurde zunächst für ein einzelnes Fach und 10 Prüfungen umges
 - Die statistische Grundlage kann von einem nachgeschalteten Modul genutzt werden, das auf Basis der gewonnenen Muster künftige Prüfungsaufgaben thematisch und formal vorhersagt
 
 ---
+---
+
+## LLM-basierte Aufgabengenerierung (Sprachmodell-Ansatz)
+
+Ein wesentlicher Bestandteil dieses Projekts ist der Einsatz eines Large Language Models (LLM), konkret eines gpt-Modells(3.5-turbo)von openai. 
+
+Es wird verwendet, um auf Basis realer Klausuraufgaben neue, thematisch passende Übungsaufgaben zu formulieren. (Neuer Aufbau der Aufgabenstellung, selbe Logik der Antwort wird akzeptiert)
+
+Der LLM erhält eine Auswahl häufiger Themen aus der vorhergehenden Analyse und generiert daraus realistische Fragen, 
+die sich in Sprache, Struktur und Inhalt an früheren Prüfungsformaten orientieren. (siehe Statistik der Aufgabentypen und Themenverteilung )
+
+Damit geht das Projekt deutlich über einfache statistische Vorhersagen hinaus: 
+Es wird nicht nur gemessen, was häufig vorkommt – sondern das Sprachmodell leitet davon direkt neue, sinnvolle Aufgaben ab.
+
+Die generierten Aufgaben werden im Ordner `llm_generator/generated_tasks/` gespeichert – sowohl als `.json`, als auch als `.pdf`.
+
+---
+
+## Beispielausgabe (PDF)
+
+Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automatisch eine PDF erzeugt:
+
+[Download der generierten Aufgaben (Beispiel)](llm_generator/generated_tasks/aufgaben_llm_export.pdf)
+
+Du kannst auch einen Screenshot der PDF verwenden, um direkt eine Vorschau zu geben (siehe unten).
+
+![PDF Beispiel](llm_generator/generated_tasks/aufgaben_llm_export_preview.png)
 
