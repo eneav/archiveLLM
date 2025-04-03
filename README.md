@@ -104,5 +104,6 @@ Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automat
 ![Vorschau pdf quals](references/qualifikationPDF.png)
 
 
-[Gesamte PDF im überblick](references/beispielausgabe.pdf)
 
+
+[VOLLSTÄNDIGE PDF](references\beispielausgabe.pdf)
