@@ -106,4 +106,4 @@ Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automat
 
 
 
-[VOLLSTÄNDIGE PDF](references\beispielausgabe.pdf)
+[VOLLSTÄNDIGE PDF](references/beispielausgabe.pdf)
