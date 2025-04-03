@@ -102,3 +102,6 @@ Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automat
 ![Vorschau PDF](statistics\beispielausgabe.pdf)
 
 ![Vorschau PDF](ArchiveLLM\llm_generator\generated_tasks\aufgaben_llm_export.pdf)
+
+[Beispielausgabe als PDF öffnen](statistics/beispielausgabe.pdf)
+
