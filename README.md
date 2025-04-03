@@ -18,10 +18,10 @@ Ziel ist es, aus vorhandenen Mustern gezielt neue Aufgabenstellungen abzuleiten,
 ## Beispielausgaben meines ursprünglichen Analyse-Tools
 
 ### Themenverteilung in 10 Prüfungen
-![Themenverteilung](statistics/StatistikThemenvereteilung.png)
+![Themenverteilung](references\StatistikThemenvereteilung.png)
 
 ### Aufgabentypen in 10 Prüfungen
-![Aufgabentypen](statistics/StatistikAufgabentypen.png)
+![Aufgabentypen](references\StatistikAufgabentypen.png)
 
 ## Datengrundlage
 
@@ -32,7 +32,7 @@ Die Daten stammen aus 10 simulierten Prüfungen eines bestimmten Fachbereichs(hi
 - `frage` – Die konkrete Aufgabenstellung  
 - `antwort` – Eine beispielhafte Musterlösung  
 
-![FORMAT](datenformatJSON.PNG)
+![FORMAT](references\datenformatJSON.PNG)
 
 Die Inhalte basieren auf realen Prüfungen, wurden aber leicht abgewandelt (z. B. Synonyme oder Umstellungen), um unterschiedliche Formulierungen bei gleichbleibender Intention zu simulieren. Zusätzlich wurde eine zufällige Varianz von ca. 20-30 % eingebaut, um realistische Abweichungen zu berücksichtigen.
 
@@ -99,9 +99,10 @@ Die generierten Aufgaben werden im Ordner `llm_generator/generated_tasks/` gespe
 Nach erfolgreicher Ausführung des Notebooks `generate_tasks.ipynb` wird automatisch eine PDF erzeugt:
 
 
-![Vorschau PDF](statistics\beispielausgabe.pdf)
+![Vorschau pdf probezeit](references\probezeitPDF.png)
 
-![Vorschau PDF](ArchiveLLM\llm_generator\generated_tasks\aufgaben_llm_export.pdf)
+![Vorschau pdf quals](references\qualifikationPDF.png)
 
-[Beispielausgabe als PDF öffnen](statistics/beispielausgabe.pdf)
+
+[Gesamte PDF im überblick](statistics/beispielausgabe.pdf)
 
